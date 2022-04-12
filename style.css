@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=PT+Sans+Narrow&family=PT+Sans&display=swap');
+
+:root {
+    --bg-color: #222222;
+    --font-color: #222222;
+    --header-font-color: #FFFFFF;
+    --credits-font-color: #FFFFFF;
+    --main-bg-color: #F2F2C8;
+    --form-bg-color: #FFFFFF;
+    --side-bar-bg-color: #408c40;
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'PT Sans', sans-serif;
+    color: var(--font-color); 
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Caramel', 'PT Sans', 'PT Sans Narrow', cursive, sans-serif;
+    font-size: 3.3rem;
+    line-height: 2.6rem;
+    color: var(--header-font-color);
+    margin: 0;
+    text-shadow: -3px -3px 5px #000000;
+}
+
+a {
+    color: var(--credits-font-color);
+    text-decoration: none;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    margin: 24px 0;
+    font-size: 1.4rem;
+}
+
+label {
+    width: 50%;
+    display: block;
+    margin: 12px 0 0;
+    letter-spacing: .3rem;
+    font-family: 'PT Sans Narrow', 'PT Sans', sans-serif;
+    font-size: 0.9rem;
+    flex: 1 0 auto;
+}
+
+input {
+    width: 24ch;
+    font-family: 'PT Sans', 'PT Sans Narrow', sans-serif;
+    font-size: 1.2em;
+}
+
+input:focus {
+    border-color: #87CEFA;
+    outline: #C1E7FF;
+    box-shadow: 1px 1px 4px var(--bg-color);
+}
+
+button {
+    background-color: var(--side-bar-bg-color);
+    margin: 12px 24px;
+    padding: 8px 24px;
+    color: var(--header-font-color);
+    border-radius: 12px;
+}
+
+.container {
+    background-color: var(--main-bg-color);
+    width: clamp(770px,80%,1000px);
+    font-size: 1.2rem;
+    margin: 0px auto;
+    display: flex;
+}
+
+.side-bar {
+    background-color: var(--side-bar-bg-color);
+    background-image: url(assets/bgimage.jpg);
+    background-size: cover;
+    width: max(270px,40%);
+    height: 100vh;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.side-bar-title {
+    position: absolute;
+    top: 15%;
+    height: 7rem;
+    width: 100%;
+    background-color: #222222BB;
+    padding: 0.8rem;
+}
+
+.side-bar-title img {
+    float: left;
+}
+
+.side-bar-credits {
+    color: var(--credits-font-color);
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+.explanation {
+    padding: 0 24px;
+    font-family: 'PT Sans', 'PT Sans Narrow', sans-serif;
+    line-height: 1.5;
+}
+
+.form {
+    background-color: var(--form-bg-color);
+    padding: 0 24px 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.error {
+    border-color: #fa8787;
+    outline: #ffc1c1;
+}
+
+.errorMessage {
+    color:#ff0000;
+    font-size: .9em;
+    letter-spacing: normal;
+    visibility: hidden;
+}
+
+.errorMessage::before {
+    content: '* ';
+}
