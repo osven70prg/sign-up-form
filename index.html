@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon" sizes="64x64,32x32,16x16">
+    <script src="script.js" defer></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div class="side-bar-title">
+                <img src="assets/logo.png" alt="logo">
+                <h1>Ecoturismo<br/>El Samán</h1>
+            </div>
+            <div class="side-bar-credits">
+                by <a href="#">Oswaldo Hernández</a> 
+            </div>
+        </div>
+        <div class="main">
+        <p class="explanation">¿Conoces nuestra geografía con su rica biodiversidad? 
+        Suscríbete en nuestro sitio y recibirás semanalmente un correo electrónico
+        con información general sobre nuestras bellezas naturales y sugerencias
+        prácticas para conocerlas mejor y para visitarlas.<br/>
+        No se ama lo que no se conoce. Venezuela es hermosa.</p>
+        <form action="#" method="post">
+            <div class="form">
+            <legend>Regístrate</legend>
+            <label for="fname">NOMBRE<br><input type="text" name="fname" id="fname">
+                <div class="errorMessage">Este campo no puede estar vacío.</div></label>
+            <label for="lname">APELLIDO<br><input type="text" name="lname" id="lname">
+                <div class="errorMessage">Este campo no puede estar vacío.</div></label>
+            <label for="email">CORREO ELECTRÓNICO<br><input type="text" name="email" id="email">
+                <div class="errorMessage">Ingresa un correo electrónico válido.</div></label>
+            <label for="phone">TELÉFONO<br><input type="text" name="phone" id="phone"></label>
+            <label for="pwd">CONTRASEÑA<br><input type="password" name="pwd" id="pwd" class="error">
+                <div class="errorMessage">La contraseña debe tener al menos 6 caracteres e incluir al menos una mayúscula, una minúscula y un número.</div></label>
+            <label for="pwdConf">CONFIRMA CONTRASEÑA<br><input type="password" name="pwdConf" id="pwdConf" class="error">
+                <div class="errorMessage">Las contraseñas no coinciden.</div></label>
+        </div>
+        <button type="submit">Crear cuenta</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
